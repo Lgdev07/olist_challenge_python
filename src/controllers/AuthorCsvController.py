@@ -6,7 +6,7 @@ from flask.views import MethodView
 from src.models.Author import AuthorModel
 from src.database.db import db
 
-class AuthorCsv(MethodView):
+class AuthorCsvController(MethodView):
 
   def post(self):
     if not 'file' in request.files:
